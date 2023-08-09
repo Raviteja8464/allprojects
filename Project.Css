@@ -1,0 +1,1348 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.full-page {
+    background:rgb(200, 196, 196); 
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.first-login-page {
+    background-image: url("https://res.cloudinary.com/dkao80enw/image/upload/v1690561484/Sunset_Mountain_Landscape_HD_av23lw.jpg");
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.navbar-section {
+    width: 100%;
+    border: 0px solid rgb(40, 35, 35);
+    background-color: rgba(231, 239, 231, 0.3);
+
+}
+
+.quotes {
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+    overflow-y: auto;
+    color: rgb(233, 12, 189);
+    font-size: 20px;
+    border: 1px solid rgb(233, 12, 189);
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(63, 61, 61, 0.4);
+}
+
+.quotes:hover {
+    box-shadow: 3px 3px 20px rgb(21, 21, 21);
+    border: 1px solid rgb(218, 225, 229);
+    color: rgb(16, 16, 17);
+
+}
+
+
+.logo1 {
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid green;
+    padding: 5px;
+
+    margin-left: 10px;
+    width: 80px;
+    height: 80%;
+    border-radius: 40px;
+    text-align: center;
+    background: linear-gradient(to top, rgb(43, 43, 244), rgb(239, 169, 38), rgb(243, 238, 238), rgb(243, 243, 39), rgb(173, 223, 235));
+    border-radius: 10px;
+    color: rgb(56, 51, 56);
+}
+
+.login-button {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-right: 15px;
+    border: 2px solid white;
+
+
+}
+
+.login-button:hover {
+    box-shadow: 0px 0px 8px rgb(16, 244, 9);
+    border: 2px solid rgb(16, 244, 9);
+    text-shadow: rgb(18, 19, 18) 3px 0;
+    color: rgb(233, 239, 233);
+
+}
+
+.circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 60px;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid orange;
+    margin-right: 100px;
+    animation: circle 40s linear infinite;
+}
+
+.circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 2px solid greenyellow;
+
+    animation: circle 20s linear infinite;
+}
+
+.circle3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 2px solid rgb(234, 6, 120);
+
+    animation: circle 5s linear infinite;
+}
+
+.circle4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid rgb(8, 0, 255);
+
+    animation: circle 0.1s linear infinite;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width:576px) and (max-width:800px) {
+    .quotes:hover {
+        box-shadow: 3px 3px 20px orange
+        ;
+        border: 1px solid orange;
+        color: orange;
+
+    }
+   .logo1{
+        font-size: 15px;
+        
+        border: 1px solid green;
+        padding: 2px;
+
+        margin-left: 8px;
+        width: 60px;
+        height: 80%;
+    }
+    .quotes {
+        font-size: 15px;
+    }
+
+    
+
+    .login-button {
+        box-sizing: border-box;
+        height: 40px;
+        width: 80px;
+    }
+}
+
+@media (max-width:576px) {
+    .quotes:hover {
+        box-shadow: 3px 3px 20px rgb(21, 21, 21);
+        border: 1px solid rgb(218, 225, 229);
+        color: rgb(229, 229, 215);
+
+    }
+    
+    .login-button {
+        box-sizing: border-box;
+        height: 32px;
+        width: 50px;
+        font-size: 10px;
+    }
+
+    .quotes {
+        width: 80%;
+        font-size: 15px;
+        padding: 20px;
+        
+    }
+    .logo1 {
+        width: 50px;
+    }
+}
+
+/* *********************LOGO END *********************** */
+
+.login-details-page{
+    background-image: url("https://res.cloudinary.com/dkao80enw/image/upload/v1690365409/water_bg_images_vsb9xi.webp");
+    display: none;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    animation: loginpage-bg 150s linear infinite;
+}
+@keyframes loginpage-bg {
+     0% {
+        background-position: 0px;
+          }
+     100%{ 
+        background-position: 1920px;
+     }
+}
+
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    border: 3px solid rgb(231, 224, 224);
+    width: 25%;
+    border-radius: 15px;
+    padding: 20px;
+    overflow-x: auto;
+    color: aliceblue;
+    
+    background-color: rgba(18, 17, 17, 0.6);
+}
+
+.head-welcome{
+    font-size: 25px;
+    font-weight: 900;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to left,rgb(13, 243, 251),rgb(137, 231, 137),rgb(235, 238, 5),rgb(0, 187, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.user-heading{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: orange;
+}
+.err-msg{
+    color: rgb(243, 236, 236);
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 4px;
+}
+.forgot-password{
+    color: rgb(200, 255, 0);
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+.forgot-password1{
+    color: rgb(200, 255, 0);
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+.forgot-password1:hover{
+    color: orange;
+}
+.register-link{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: orange;
+    cursor: pointer;
+}
+.register-link:hover{
+    text-decoration: underline;
+    text-shadow: rgb(16, 5, 237) 3px 0;
+}
+.btn-container{
+    font-size: 25px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.log-btn{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 3px;
+    background: transparent;
+    font-family: monospace;
+    border: 2px solid rgb(255, 0, 183);
+    color: rgb(255, 0, 204);
+}
+.log-btn:hover{
+    box-shadow: 1px 1px 20px orange;
+    border: 1px solid orange;
+    text-shadow: orange 2px 0;
+}
+.forgot-contain{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.text-input{
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: rgb(233, 233, 243);
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 4px;
+    padding-left: 10px;
+    margin-right: 0px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid orange;
+}
+.text-input:hover{
+    color: aliceblue;
+    border: 1px solid orange;
+    box-shadow: 1px 1px 20px orange;
+}
+.input-text-flex{
+    display: flex;
+    width: 100%;
+}
+.icons{
+    width:20px;
+    color: orange;
+    margin-left: 5px;
+}
+.text-input-captcha{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-top: 4px;
+    margin-bottom: 10px;
+    
+    color: rgb(13, 255, 0);
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration:1px line-through;
+    font-family: serif;
+    font-family: monospace;
+}
+.icons-captcha{
+    width:20px;
+    color: orange;
+    margin-left: 5px;
+    color: rgb(234, 219, 228);
+}
+.icons-captcha:hover{
+    text-shadow:red -3px 0;
+    cursor: pointer;
+}
+.retry-captcha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width:600px) and (max-width:1000px){
+    .login-form{
+        border: 2px solid rgb(231, 224, 224);
+        width: 50%;
+        border-radius: 10px;
+        padding: 15px;
+        }
+    .head-welcome{
+        font-size: 22px;
+    } 
+    .user-heading{
+        font-size: 18px;
+        
+    }
+    .err-msg{
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .forgot-password{
+        
+        font-size: 12px;
+        font-family: sans-serif;
+        margin-bottom: 4px;
+    }
+    .register-link{
+        font-size: 15px;
+        
+    }
+    .btn-container{
+        font-size: 20px;
+        
+        
+    }
+    .log-btn{
+        
+        width: 80px;
+        height: 38px;
+        border-radius: 8px;
+    }
+    .icons{
+        width:17px;
+        color: orange;
+        margin-left: 4px;
+    }
+    .text-input-captcha{
+        
+        height: 40px;
+        border-radius: 8px;
+        font-size: 23px;
+        
+    }
+    .icons-captcha{
+        width:18px;
+        margin-left: 4px;
+    }
+}
+@media (max-width:600px){
+    .login-form{
+        border: 1px solid rgb(231, 224, 224);
+        width: 80%;
+        border-radius: 8px;
+        padding: 10px;
+        
+        background-color: rgba(18, 17, 17, 0.8);
+        }
+    .head-welcome{
+        font-size: 20px;
+    } 
+    .user-heading{
+        font-size: 15px;
+        
+    }
+    .err-msg{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    .forgot-password{
+        
+        font-size: 10px;
+        font-family: sans-serif;
+        margin-bottom: 4px;
+    }
+    .forgot-password1{
+        
+        font-size: 10px;
+        font-family: sans-serif;
+        margin-bottom: 4px;
+    }
+    .register-link{
+        font-size: 12px;
+        
+    }
+    .btn-container{
+        font-size: 17px;
+        
+        
+    }
+    .log-btn{
+        
+        width: 70px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .icons{
+        width:14px;
+        color: orange;
+        margin-left: 3px;
+    }
+    .text-input-captcha{
+        
+        height: 38px;
+        border-radius:5px;
+        font-size: 20px;
+        
+    }
+    .icons-captcha{
+        width:15px;
+        margin-left: 3px;
+    }
+}
+/*  ************** login page End ***************** */
+.signup-form{
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    border: 1px solid rgb(9, 240, 240);
+    width: 25%;
+   
+    
+    border-radius: 15px;
+    padding: 10px;
+    
+    color: rgb(144, 189, 229);
+    
+    background-color: rgba(18, 17, 17, 0.97);
+
+}
+.exit-button{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 98%;
+    margin-right: 20px;
+    color: yellow;
+}
+.exit-icon:hover {
+    box-shadow: 1px 1px 10px yellow;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.head-signUp{
+    font-size: 15px;
+    font-weight: 900;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: Radial-gradient(rgb(235, 8, 193),rgb(204, 255, 0),rgb(240, 4, 158));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.user-heading1{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(85, 245, 245);
+}
+.err-msg1{
+    color: rgb(243, 236, 236);
+    font-size: 10px;
+    font-family: sans-serif;
+    margin-bottom: 3px;
+}
+.success-id{
+    color: rgb(101, 233, 7);
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 3px;
+}
+
+.signUp-link{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(246, 242, 235);
+    cursor: pointer;
+}
+.signUp-link:hover{
+    text-decoration: underline;
+    text-shadow: rgb(5, 233, 237) 1px 0;
+}
+.btn-container1{
+    font-size: 16px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.signUp-btn{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 3px;
+    background: transparent;
+    font-family: monospace;
+    border: 2px solid rgb(229, 255, 0);
+    color: rgb(229, 255, 0);
+}
+.signUp-btn:hover{
+    box-shadow: 1px 1px 20px rgb(229, 255, 0);
+    border: 1px solid rgb(229, 255, 0);
+    text-shadow: rgb(229, 255, 0) 1px 0;
+}
+.forgot-contain{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.forgot-password2{
+    color: rgb(84, 214, 234);
+    font-size: 9px;
+    font-family: sans-serif;
+    margin-bottom: 3px;
+    text-decoration: none;
+}
+.text-input1{
+    margin-bottom: 5px;
+    background-color: transparent;
+    color: rgb(233, 233, 243);
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 2px;
+    padding-left: 10px;
+    margin-right: 0px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid rgb(74, 232, 232);
+}
+.text-input1:hover{
+    color: aliceblue;
+    border: 1px solid rgb(9, 240, 240);
+    box-shadow: 1px 1px 8px rgb(79, 235, 235);
+    border-radius: 5px;
+}
+.input-text-flex{
+    display: flex;
+    width: 100%;
+}
+.icons1{
+    width:13px;
+    color: rgb(66, 240, 240);
+    margin-left: 5px;
+}
+.text-input-captcha1{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding-top: 4px;
+    margin-bottom: 5px;
+    
+    color: rgb(255, 0, 251);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration:1px line-through;
+    font-family: serif;
+    font-family: monospace;
+}
+.icons-captcha1{
+    width:18px;
+    
+    margin-left: 5px;
+    color: rgb(220, 227, 15);
+}
+.icons-captcha1:hover{
+    cursor: pointer;
+}
+.retry-captcha{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+@media (min-width:1001px){
+    .signup-form{
+        background-color: rgba(18, 17, 17, 0.99);
+
+        
+    }   
+    .exit-icon{
+        height: 20px;
+        width: 20px;
+    } 
+    .success-id{
+        
+        font-size: 20px;
+        
+    }
+}
+@media (min-width:600px) and (max-width:1000px){
+    .signup-form{
+        border: 2px solid rgb(231, 224, 224);
+        width: 50%;
+        
+        border-radius: 8px;
+        padding: 12px;
+        }
+    .head-signUp{
+        font-size: 18px;
+    } 
+    .user-heading1{
+        font-size: 13px;
+        
+    }
+    .err-msg1{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    .forgot-password2{
+        
+        font-size: 8px;
+        font-family: sans-serif;
+        margin-bottom: 4px;
+    }
+    .signUp-link{
+        font-size: 12px;
+        
+    }
+    .btn-container1{
+        font-size: 17px;
+        
+        
+    }
+    .signUp-btn{
+        
+        width: 110px;
+        height: 36px;
+        border-radius: 5px;
+    }
+    .icons1{
+        width:13px;
+        color: rgb(8, 239, 216);
+        margin-left: 4px;
+    }
+    .text-input1{
+        margin-bottom: 5px;
+        
+        
+        
+    }
+    .text-input-captcha1{
+        
+        height: 30px;
+        border-radius: 5px;
+        font-size: 23px;
+        
+    }
+    .icons-captcha1{
+        width:15px;
+        margin-left: 4px;
+    }
+    .success-id{
+            font-size: 15px;
+    }
+}
+@media (max-width:600px){
+    .signup-form{
+        border: 1px solid rgb(231, 224, 224);
+        width: 80%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .head-signUp{
+        font-size: 15px;
+    } 
+    .user-heading1{
+        font-size: 10px;
+        
+    }
+    .err-msg1{
+        font-size: 6px;
+        margin-bottom: 2px;
+    }
+    .forgot-password{
+        
+        font-size: 8px;
+        font-family: sans-serif;
+        margin-bottom: 4px;
+    }
+    .forgot-password2{
+        
+        font-size: 8px;
+        font-family: sans-serif;
+        margin-bottom: 4px;
+    }
+    .signUp-link{
+        font-size: 10px;
+        
+    }
+    .btn-container1{
+        font-size: 15px;
+        
+        
+    }
+    .signUp-btn{
+        
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .icons1{
+        width:10px;
+        color: rgb(84, 220, 233);
+        margin-left: 1px;
+    }
+    .text-input-captcha1{
+        
+        height: 33px;
+        border-radius:2px;
+        font-size: 15px;
+        
+    }
+    .text-input1{
+        margin-bottom: 3px;
+    }
+    .icons-captcha1{
+        width:12px;
+        margin-left: 3px;
+    }
+    .success-id{
+        
+        font-size: 13px;
+    }
+}
+/*  ************** Sign Up page End ***************** */
+/* *************** Home Page Start **************** */
+
+/* *************** Home Page Start **************** */
+.all-application-pages{
+    display: none;
+    flex-direction: column;
+    
+}
+.home-page {    
+    background-image: url("https://res.cloudinary.com/dkao80enw/image/upload/v1691128429/apps.39873.14451776357165671.f5eb53ec-970d-496a-ba82-d5f797dc9def_f5lxtr.jpg");
+    display: flex;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.navbar-section-page{
+    border-bottom: 3px solid rgb(13, 192, 232);
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+.each-application-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.toggle-btn{
+    color: orange;
+    border-radius: 5px;
+    background: linear-gradient(30deg,yellow,white,orange,rgb(151, 94, 94),lightgreen,white);
+    
+}
+.toggle-btn2{
+    font-size: 10px;
+    
+}
+.toggle-btn:hover{
+    background: rgb(228, 228, 238);
+    box-shadow: 1px 1px 20px rgb(9, 232, 217);
+    border: none;
+}
+.anchor-list{
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.anchor-list:hover{
+    text-shadow: rgb(234, 255, 0) 1px 0,green -1px 0;
+    font-size: 17px;
+    color: aqua;
+    text-decoration: underline;
+}
+.username-logo{
+    margin-left: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family:sans-serif;
+    color: aliceblue;
+    background: linear-gradient(45deg,yellow,orange,red,lightgreen,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: logoname 15s linear 10;
+
+}
+@keyframes logoname {
+    from {
+        transform: translateX(100px);
+    }
+}
+.logout-button{
+    
+    border-radius: 5px;
+    
+   background: linear-gradient(45deg,yellow,white,orange,red,lightgreen,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+    text-align: center;
+    font-family: "roboto";
+    font-weight: 800;
+}
+
+.border-animation1 {
+    box-sizing: border-box;
+    position: relative;
+    height: 30px;
+    width: 80px;
+    overflow: hidden;
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5px;
+    
+}
+.border-animation2 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+                 
+}
+.border-animation1::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg,transparent,transparent,transparent,aqua,rgb(237, 5, 179),rgb(128, 0, 0));
+    
+    transform-origin: bottom right;
+    z-index: 1;
+    animation: border 9s linear 4s infinite;
+}
+.border-animation1::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -50%;
+    left: -50%;
+    z-index: 1;
+    background: linear-gradient(0deg,transparent,transparent,red,yellow,rgb(90, 239, 3));
+    transform-origin: bottom right;
+    
+    animation: border 9s linear 0s infinite;
+    
+}
+@keyframes border {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.home-page-quatition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+
+
+}
+.app-quotes{
+    color: rgb(231, 237, 239);
+    padding: 10px;
+    font-size: 25px;
+    font-family: italic;
+    width: 80%;
+    
+}
+.app-quotes:hover{
+    background: rgba(238, 230, 230, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(51, 50, 50);
+    color: rgb(203, 238, 7);
+
+}
+@media (min-width:600px) and (max-width:1000px){
+    .app-quotes{
+        padding: 8px;
+        font-size: 20px;
+        width: 85%;
+
+    }
+}
+@media (min-width:600px){
+    .app-quotes{
+        padding: 6px;
+        font-size: 15px;
+        width: 90%;
+        
+    }
+}
+/*   *********** wikipedia page ************ */
+.wikipedia-page{
+    background-image:url("https://res.cloudinary.com/dkao80enw/image/upload/v1691128580/584197_jzxeuf.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    padding: 20px;
+    
+    
+
+}
+.top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+}
+.world-map{
+    background-image: url("https://res.cloudinary.com/dkao80enw/image/upload/v1691131497/world_map_nml5xq.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    animation: map 100s linear infinite;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 1px 1px 10px white, 1px 1px 10px ;
+}
+.world-map:hover{
+    box-shadow: inset 1px 1px 10px rgb(21, 21, 21), 1px 1px 20px ;
+
+}
+@keyframes map {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1920px 0;
+    }
+}
+.search-input-wikipedia{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid orange;
+    
+    background: rgba(95, 92, 92,0.7);
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+    
+}
+.search-input-wikipedia:hover{
+    border: 1px solid orange;
+    box-shadow: 0px 0px 20px orange;
+
+}
+.wikipedia-name{
+    background: linear-gradient(45deg,yellow,orange,rgb(0, 247, 255),lightgreen,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.wikipedia-data{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.result-title{
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+}
+.result-title:hover{
+    text-shadow: white 1px 0;
+}
+.result-url{
+    text-decoration: none;
+    color: rgb(13, 236, 9);
+    font-size: 15px;
+}
+.result-url:hover{
+    text-decoration: underline;
+    font-size: 17px;
+}
+.link-description{
+    font-size: 19px;
+    font-style: "roboto";
+}
+.link-description:hover{
+    font-size: 20px;
+}
+@media (min-width:600px) and (max-width:1000px) {
+    .world-map{
+        background-image: url("https://res.cloudinary.com/dkao80enw/image/upload/v1691131497/world_map_nml5xq.jpg");
+        background-size: cover;
+        height: 180px;
+        width: 180px;
+        margin-top: 27px;
+        margin-bottom: 27px;
+        border-radius: 50%;
+        animation: map 100s linear infinite;
+        display: flex;
+        justify-content: center;
+        box-shadow: inset 1px 1px 10px white, 1px 1px 10px ;
+    }
+    .world-map:hover{
+        box-shadow: inset 1px 1px 10px rgb(21, 21, 21), 1px 1px 20px ;
+    
+    }
+    @keyframes map {
+        0% {
+            background-position: 0;
+        }
+        100% {
+            background-position: 1920px 0;
+        }
+    }
+    .search-input-wikipedia{
+        width: 80%;
+        height: 27px;
+        border-radius: 4px;
+        border: 2px solid orange;
+        
+        background: rgba(95, 92, 92,0.7);
+        padding: 8px;
+        font-weight: 500;
+        color: white;
+        
+    }
+    .search-input-wikipedia:hover{
+        border: 1px solid orange;
+        box-shadow: 0px 0px 20px orange;
+    
+    }
+    .wikipedia-name{
+        background: linear-gradient(45deg,yellow,orange,rgb(0, 247, 255),lightgreen,white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 18px;
+        font-weight: bold;
+    
+    }
+    .wikipedia-data{
+        background: rgba(0, 0, 0, 0.2);
+        padding: 13px;
+        border-radius: 8px;
+        margin-top: 13px;
+    }
+    .result-title{
+        text-decoration: none;
+        color: aqua;
+        font-size: 18px;
+    }
+    .result-title:hover{
+        text-shadow: white 1px 0;
+    }
+    .result-url{
+        text-decoration: none;
+        color: rgb(13, 236, 9);
+        font-size: 13px;
+    }
+    .result-url:hover{
+        text-decoration: underline;
+        font-size: 14px;
+    }
+    .link-description{
+        font-size: 16px;
+        font-style: "roboto";
+    }
+    .link-description:hover{
+        font-size: 17px;
+    }
+
+    
+}
+@media (max-width:600px) {
+    .home-page {    
+        background-image: url("https://res.cloudinary.com/dkao80enw/image/upload/v1691128797/R_utzkvj.png");
+        display: none;
+        background-size: cover;
+        min-height: 100vh;
+        width: 100vw;
+        color: aliceblue;
+        padding: 18px;
+    }
+    .world-map{
+        background-image: url("https://res.cloudinary.com/dkao80enw/image/upload/v1691131497/world_map_nml5xq.jpg");
+        background-size: cover;
+        height: 130px;
+        width: 130px;
+        margin-top: 23px;
+        margin-bottom: 22px;
+        border-radius: 50%;
+        animation: map 100s linear infinite;
+        display: flex;
+        justify-content: center;
+        box-shadow: inset 1px 1px 10px white, 1px 1px 10px ;
+    }
+    .world-map:hover{
+        box-shadow: inset 1px 1px 10px rgb(21, 21, 21), 1px 1px 20px ;
+    
+    }
+    @keyframes map {
+        0% {
+            background-position: 0;
+        }
+        100% {
+            background-position: 1920px 0;
+        }
+    }
+    .search-input-wikipedia{
+        width: 80%;
+        height: 25px;
+        border-radius: 4px;
+        border: 2px solid orange;
+        
+        background: rgba(95, 92, 92,0.7);
+        padding: 7px;
+        font-weight: 500;
+        color: white;
+        
+    }
+    .search-input-wikipedia:hover{
+        border: 1px solid orange;
+        box-shadow: 0px 0px 20px orange;
+    
+    }
+    .wikipedia-name{
+        background: linear-gradient(45deg,yellow,orange,rgb(0, 247, 255),lightgreen,white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 17px;
+        font-weight: bold;
+    
+    }
+    .wikipedia-data{
+        background: rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        border-radius: 6px;
+        margin-top: 10px;
+    }
+    .result-title{
+        text-decoration: none;
+        color: aqua;
+        font-size: 15px;
+    }
+    .result-title:hover{
+        text-shadow: white 1px 0;
+    }
+    .result-url{
+        text-decoration: none;
+        color: rgb(13, 236, 9);
+        font-size: 10px;
+    }
+    .result-url:hover{
+        text-decoration: underline;
+        font-size: 11px;
+    }
+    .link-description{
+        font-size: 14px;
+        font-style: "roboto";
+    }
+    .link-description:hover{
+        font-size: 1px;
+    }
+
+    
+}
+.calculator{
+    background: rgb(0, 255, 34);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    padding: 20px;
+
+}
+.wheather{
+    background: rgb(255, 238, 0);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    padding: 20px;
+
+}
+.age-calculator{
+    background: rgb(255, 0, 119);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    padding: 20px;
+
+}
+.ContactUs-Page{
+    background:linear-gradient(to left,rgb(194, 97, 97),rgb(75, 209, 124),rgb(193, 201, 52));
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    padding: 20px;
+
+}
