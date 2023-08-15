@@ -1220,7 +1220,7 @@ html {
 @media (max-width:600px) {
     .home-page {    
         background-image: url("https://res.cloudinary.com/dkao80enw/image/upload/v1691128797/R_utzkvj.png");
-        display: none;
+        display: flex;
         background-size: cover;
         min-height: 100vh;
         width: 100vw;
